@@ -31,11 +31,11 @@ const CaptainProtectWrapper = ({
             }
         })
             .catch(err => {
-
+                // console.log(children)
                 localStorage.removeItem('token')
                 navigate('/captain-login')
             })
-    }, [token])
+    }, [ token ])
 
 
 
